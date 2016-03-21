@@ -47,6 +47,7 @@ RUN mkdir -p /etc/mysql/conf.d \
 		echo 'user = mysql'; \
 		echo 'datadir = /var/lib/mysql'; \
 		echo 'character_set_server=utf8'; \
+		echo 'lower_case_table_names=1'; \
 		echo '!includedir /etc/mysql/conf.d/'; \
 	} > /etc/mysql/my.cnf
 
